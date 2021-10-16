@@ -1,0 +1,72 @@
+img{
+    width: 500px;
+    height: 300px;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header h3
+{
+  position: relative;
+  top: 5px;
+  left: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.tabs 
+{
+    position: relative;
+    min-height: 200px;
+    width: auto;
+    margin: 25px 0;
+    padding-top: 10px;
+  }
+.tab 
+{
+    float: left;
+  }
+.tab label 
+{
+    background: rgb(240, 238, 238); 
+    padding: 10px; 
+    cursor: pointer;
+    margin-left: -1px; 
+    font-family: 'Times New Roman', Times, serif;
+  }
+.tab:first-child label 
+{
+    margin-left: 0;
+  }
+.tab input[type=radio] 
+{
+    display: none;   
+  }
+.tab-content 
+{
+    position: absolute;
+    top: 28px;
+    padding: 20px;
+    left: 0;
+    font-family: 'Times New Roman', Times, serif;
+    display: none;
+  }
+input[type=radio]:checked ~ label 
+{
+    background: white;
+    border-bottom: 1px solid white;
+  }
+input[type=radio]:checked ~ label ~ .tab-content 
+{
+    display: block;
+  }
